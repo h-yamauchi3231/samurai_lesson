@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+main div.animal {
+    width: calc(33.3% - 10px);
+    margin: 5px;
+}
+
+.animal img {
+    width: 100%;
+}
+
+@meda (max-width: 500px) {
+    header {
+        flex-direction: cloumn;
+        align-items: center;
+    }
+
+    main div.animal {
+        width: calc(50% - 10px);
+        margin: 5px;
+    }
+}
